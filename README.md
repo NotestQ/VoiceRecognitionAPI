@@ -17,7 +17,7 @@ If the mod is throwing an error use [the github issue page](https://github.com/L
 
 If it is loading correctly but isn't detecting your voice:
  - Make sure you have set your [default microphone](https://www.howtogeek.com/700440/how-to-choose-your-default-microphone-on-windows-10/) correctly.
- - Enable `LogRecognitionResults` in the mod config, found at `(LethalCompanyDir)/BepInEx/config/me.loaforc.voicewrapperapi.cfg`. If it is getting wrong results try [improving your speech recognition](https://support.microsoft.com/en-us/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571#:~:text=In%20Control%20Panel%2C%20select%20Ease,to%20set%20up%20speech%20recognition.)
+ - Enable `LogRecognitionResults` in the mod config, found at `(ContentWarningDir)/BepInEx/config/me.loaforc.voicewrapperapi.cfg`. If it is getting wrong results try [improving your speech recognition](https://support.microsoft.com/en-us/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571#:~:text=In%20Control%20Panel%2C%20select%20Ease,to%20set%20up%20speech%20recognition.)
 
 ## Mod Usage
 Download the [latest dll](https://github.com/LoafOrc/VoiceRecognitionAPI/releases/latest) from the releases tab and add it as a reference to the project. After adding it as a reference you can add it as a reference:
