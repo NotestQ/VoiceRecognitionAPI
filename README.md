@@ -1,5 +1,8 @@
 # VoiceRecognitionAPI
- Loads Windows Speech recognition into Lethal Company and provides a dev-friendly way of using it.
+Loads Windows Speech recognition into Content Warning and provides a dev-friendly way of using it.
+
+## This is a quick fork
+I ported this to Content Warning very quickly, I got permission from the repo owner to reupload it in the Thunderstore.
 
 ## What does this do for players?
 In short - nothing. This is a simple API, instead other mods use methods from this mod to build their own features. So go check their feature list to see what voice commands they may offer.
