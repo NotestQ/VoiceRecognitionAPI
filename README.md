@@ -3,6 +3,10 @@ Loads Windows Speech recognition into Content Warning and provides a dev-friendl
 
 ## This is a quick fork
 I ported this to Content Warning very quickly, I got permission from the repo owner to reupload it in the Thunderstore.
+I don't know how to git.
+
+## How do I use this
+Read the original [developer docs](https://github.com/LoafOrc/VoiceRecognitionAPI/wiki)
 
 ## What does this do for players?
 In short - nothing. This is a simple API, instead other mods use methods from this mod to build their own features. So go check their feature list to see what voice commands they may offer.
@@ -44,10 +48,11 @@ If you'd like to build the mod for yourself:
 ```xml
 <Project>
   <PropertyGroup>
-    <!--This should be the path to the folder that contains `LethalCompany.exe` usually people have it on the C: drive but incase not, change it here-->
-    <LethalCompanyPath>C:\Program Files (x86)\Steam\steamapps\common\Lethal Company</LethalCompanyPath> 
+    <!--This should be the path to the folder that contains `Content Warning.exe` usually people have it on the C: drive but incase not, change it here-->
+    <ContentWarningPath>C:\Program Files (x86)\Steam\steamapps\common\Content Warning</ContentWarningPath> 
   </PropertyGroup>
 </Project>
 ```
  - Then contribute I guess.
  - Build look you would a normal mod.
+ - literally just changed Lethal Company to Content Warning, this feels wrong. This must be wrong.
