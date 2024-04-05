@@ -4,8 +4,8 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 	</PropertyGroup>
 	<PropertyGroup>
-		<!--This should be the path to the folder that contains `LethalCompany.exe` usually people have it on the C: drive but incase not, change it here-->
-		<LethalCompanyPath>C:\Program Files (x86)\Steam\steamapps\common\Lethal Company</LethalCompanyPath>
+		<!--This should be the path to the folder that contains `Content Warning.exe` usually people have it on the C: drive but incase not, change it here-->
+		<ContentWarningPath>C:\Program Files (x86)\Steam\steamapps\common\Content Warning</ContentWarningPath>
 	</PropertyGroup>
   <!-- prevent referenced assemblies from being copied to the output folder -->
   <Target Name="ClearReferenceCopyLocalPaths" AfterTargets="ResolveAssemblyReferences">
@@ -42,26 +42,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-    <Reference Include="LethalSettings">
-      <HintPath>Dependencies\LethalSettings.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>$(LethalCompanyPath)\Lethal Company_Data\Managed\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(LethalCompanyPath)\Lethal Company_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(LethalCompanyPath)\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
     <Reference Include="0Harmony">
-      <HintPath>$(LethalCompanyPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>$(LethalCompanyPath)\Lethal Company_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\Content Warning_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>$(LethalCompanyPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\Content Warning_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\Content Warning_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

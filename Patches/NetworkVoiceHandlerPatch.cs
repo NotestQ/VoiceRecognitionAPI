@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using HarmonyLib;
 
 namespace VoiceRecognitionAPI.Patches {
-    [HarmonyPatch(typeof(GameNetworkManager))]
-    internal class GameNetworkManagerPatch {
+    [HarmonyPatch(typeof(NetworkVoiceHandler))]
+    internal class NetworkVoiceHandlerPatch {
         [HarmonyPostfix, HarmonyPatch("Start")]
         internal static void SetupRecognitionEngine() {
             new SpeechHandler();

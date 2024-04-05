@@ -61,7 +61,6 @@ namespace VoiceRecognitionAPI {
             VoiceRecognitionEventArgs args = new VoiceRecognitionEventArgs();
 
             args.Message = e.Result.Text; args.Confidence = e.Result.Confidence;
-
             try {
                 VoiceRecognitionFinishedEvent.Invoke(VoicePlugin.instance, args);
             } catch(Exception ex) {

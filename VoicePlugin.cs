@@ -7,16 +7,14 @@ using System.IO;
 using System.Reflection;
 using System.Speech.Recognition;
 using VoiceRecognitionAPI.Patches;
-using VoiceRecognitionAPI.Util;
 
 namespace VoiceRecognitionAPI {
 
     [BepInPlugin(modGUID, modName, modVersion)]
-    [BepInDependency("com.willis.lc.lethalsettings", BepInDependency.DependencyFlags.SoftDependency)]
     public class VoicePlugin : BaseUnityPlugin {
         public const string modGUID = "me.loaforc.voicerecognitionapi";
         public const string modName = "VoiceRecognitionAPI";
-        public const string modVersion = "1.2.0";
+        public const string modVersion = "1.2.1";
 
         private static readonly Harmony harmony = new Harmony(modGUID);
         internal static VoicePlugin instance;
@@ -53,16 +51,8 @@ namespace VoiceRecognitionAPI {
                 }
             };
 
-            logger.LogInfo("Checking if LethalSettings is installed.");
-            if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.willis.lc.lethalsettings")) {
-                logger.LogInfo("It is! Adding voice recognition test to the settings menu.");
-                VoiceRecognitionSettings.Init();
-            } else {
-                logger.LogInfo("it isn't :( - you won't be able to test voice recognition easily inside the game");
-            }
-
             logger.LogInfo("Applying Patches");
-            harmony.PatchAll(typeof(GameNetworkManagerPatch));
+            harmony.PatchAll(typeof(NetworkVoiceHandlerPatch));
 
             logger.LogInfo(modName + ":" + modVersion + " has succesfully loaded!");
         }
