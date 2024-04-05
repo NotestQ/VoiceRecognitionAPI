@@ -43,19 +43,19 @@
 
 	<ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>$(ContentWarningPath)\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\Content Warning_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(ContentWarningPath)\Content Warning_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\BepInEx\core\BepInEx.dll</HintPath>
+      <HintPath>$(ContentWarningPath)\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\Content Warning_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>$(ContentWarningPath)\Content Warning_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\Content Warning_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(ContentWarningPath)\Content Warning_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
