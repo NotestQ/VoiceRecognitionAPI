@@ -2,6 +2,7 @@
 Loads Windows Speech recognition into Content Warning and provides a dev-friendly way of using it.
 
 ## This is a quick fork
+Original creator is LoafOrc! All props go to him.
 I ported this to Content Warning very quickly, I got permission from the repo owner to reupload it in the Thunderstore.
 I don't know how to git.
 
