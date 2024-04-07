@@ -13,14 +13,14 @@ Read the original [developer docs](https://github.com/LoafOrc/VoiceRecognitionAP
 In short - nothing. This is a simple API, instead other mods use methods from this mod to build their own features. So go check their feature list to see what voice commands they may offer.
 
 ## It doesn't work properly help!
-If the mod is throwing an error use [the github issue page](https://github.com/LoafOrc/VoiceRecognitionAPI/issues) and copy-paste the error in there.
+If the mod is throwing an error use [the github issue page](https://github.com/NotestQ/VoiceRecognitionAPI/issues) and copy-paste the error in there.
 
 If it is loading correctly but isn't detecting your voice:
  - Make sure you have set your [default microphone](https://www.howtogeek.com/700440/how-to-choose-your-default-microphone-on-windows-10/) correctly.
  - Enable `LogRecognitionResults` in the mod config, found at `(ContentWarningDir)/BepInEx/config/me.loaforc.voicewrapperapi.cfg`. If it is getting wrong results try [improving your speech recognition](https://support.microsoft.com/en-us/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571#:~:text=In%20Control%20Panel%2C%20select%20Ease,to%20set%20up%20speech%20recognition.)
 
 ## Mod Usage
-Download the [latest dll](https://github.com/LoafOrc/VoiceRecognitionAPI/releases/latest) from the releases tab and add it as a reference to the project. After adding it as a reference you can add it as a reference:
+Download the [latest dll](https://github.com/NotestQ/VoiceRecognitionAPI/releases/latest) from the releases tab and add it as a reference to the project. After adding it as a reference you can add it as a reference:
 ```cs
 [BepInDependency(VoiceRecognitionAPI.Plugin.modGUID)]
 public class YourMod : BaseUnityPlugin { // ...
@@ -55,5 +55,5 @@ If you'd like to build the mod for yourself:
 </Project>
 ```
  - Then contribute I guess.
- - Build look you would a normal mod.
+ - Build like you would a normal mod.
  - literally just changed Lethal Company to Content Warning, this feels wrong. This must be wrong.
