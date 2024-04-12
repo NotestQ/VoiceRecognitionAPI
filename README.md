@@ -20,7 +20,7 @@ If it is loading correctly but isn't detecting your voice:
  - Change BepInEx's `LogLevels` in its config found at `(ContentWarningDir)/BepInEx/config/BepInEx.cfg`. to include `, Debug` or change it to `All`. If it is getting wrong results try [improving your speech recognition](https://support.microsoft.com/en-us/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571#:~:text=In%20Control%20Panel%2C%20select%20Ease,to%20set%20up%20speech%20recognition.)
 
 ## Mod Usage
-Download the [latest dll](https://github.com/NotestQ/VoiceRecognitionAPI/releases/latest) from the releases tab and add it as a reference to the project. After adding it as a reference you can add it as a reference:
+Download the [latest dll](https://github.com/NotestQ/VoiceRecognitionAPI/releases/latest) from the releases tab and add it as a reference to the project. After adding it as a reference you can add it as a dependency:
 ```cs
 [BepInDependency(VoiceRecognitionAPI.Plugin.modGUID)]
 public class YourMod : BaseUnityPlugin { // ...
