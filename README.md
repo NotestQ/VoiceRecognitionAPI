@@ -3,7 +3,7 @@ Loads Windows Speech recognition into Content Warning and provides a dev-friendl
 
 ## Attributions
 This is a VoiceRecognitionAPI port for Content Warning made with written permission from the original developer.  
-The original VoiceRecognitionAPI is created by [LoafOrc](https://github.com/LoafOrc/), you may get the original library [here](https://github.com/LoafOrc/VoiceRecognitionAPI/).  
+The original VoiceRecognitionAPI is created by [LoafOrc](https://github.com/LoafOrc/), you may get the original API [here](https://github.com/LoafOrc/VoiceRecognitionAPI/).  
 
 The port modifies one patch from Lethal Company start-up method to a Content Warning start-up method. 
 The port also modifies the README.md.  
