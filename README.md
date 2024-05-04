@@ -6,6 +6,7 @@ This is a VoiceRecognitionAPI port for Content Warning made with written permiss
 The original VoiceRecognitionAPI is created by [LoafOrc](https://github.com/LoafOrc/), you may get the original library [here](https://github.com/LoafOrc/VoiceRecognitionAPI/).  
 
 The port modifies one patch from Lethal Company start-up method to a Content Warning start-up method. 
+The port also modifies the README.md.  
 
 ## Additions
 This is a simple API that, by itself, adds nothing. This is intended for mod developers to build their own features from. It is recommended to look at their feature list instead.  
